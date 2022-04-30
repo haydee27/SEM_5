@@ -24,24 +24,27 @@ public class salario {
             C= (V * 0.10) + 300;
             S = C * R ;
             SN = C- S;
-            
+            System.out.println("Su nombre es: " + N);
             System.out.println("Su salario liquido es: $ " + C);
             System.out.println("Su salario menos retencion de renta es: $ " + SN);
         }else if(V >=1000 && V <= 2999){
             C = (V * 0.08) + 300;
             S = C * R;
             SN = C- S;
+            System.out.println("Su nombre es: " + N);
             System.out.println("Su salario liquido es: $ "+ C);
             System.out.println("Su salario menos retencion de renta es: " + SN);
         }else if(V>= 1 && V <=999) {
              C = (V * 0.05) + 300;
             S = C * R;
             SN = C- S;
+            System.out.println("Su nombre es: " + N);
             System.out.println("Su salario liquido es: $ "+ C);
             System.out.println("Su salario menos retencion de renta es: " + SN);  
         }else{
             System.out.println("Datos incorrectos");
         }
+        
         }
         
     }
