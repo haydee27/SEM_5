@@ -1,0 +1,39 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class depreciacion {
+    public static void main(String[] args) {
+        
+        double CM = 0;
+        String NM = "";
+        int T = 0;
+        double SD = 0;
+        double PD = 0;
+        double MD = 0;
+        
+        
+        Scanner l = new Scanner(System.in);
+        System.out.println("Costo de la maquinaria: $ ");
+        CM = l.nextDouble();
+        
+        System.out.println("Nombre de la maquinaria: ");
+        NM = l.next();
+        
+        System.out.println("Años de depreciacion: ");
+        T = l.nextInt();
+        
+        SD = (T *(T +1))/2;
+        
+        System.out.println("N \t Porcentaje \t Monto depreciacion");
+        for(int i=1; i<= T; i++){
+            PD = (i / SD);
+             MD = CM * PD;
+            System.out.println( i + "\t" + PD + "\t" + MD );
+            
+            
+          
+        }
+    }
+  
+}
