@@ -15,13 +15,12 @@ public class EstructuraDeControl {
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
-      
+        
     }
 
     public static void ifSencillo(double salario) {
         if(salario> 235){ //La condicion que se evalua y en caso de ser verdadera
             System.out.println("Usted gana mas del salario minimo");
         }
-    }
-    
+    }  
 }
